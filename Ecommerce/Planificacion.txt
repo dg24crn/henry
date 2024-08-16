@@ -1,0 +1,48 @@
+Proyecto M4 | E-Commerce (FrontEnd)
+
+Descripcion:
+Se trata de una pagina web basada en un E-Commerce en donde el
+usuario pueda registrarse y realizar "compras" de articulos en
+dicha pagina. Los articulos serán de tecnologia, como celulares,
+tablets, tvs, etc...
+
+Los usuarios deben de estar registrados y logeados para poder
+realizar compras.
+
+Caracteristicas:
+Pagina Principal donde se mostrara una Navbar con opçiones para
+navegar/buscar entre los distintos productos disponibles en la
+pagina web.
+
+Pagina de Registrar e Inicio de Sesion en donde el usuario podra
+realizar la accion correspondiente ingresando sus credenciales.
+
+Pagina de Articulo donde se mostrara toda la informacion disponible
+de el articulo que hayan seleccionado, informacion tal como imagenes,
+descripcion, caracteristicas tecnicas, precio, etc...
+
+Pagina de Pedidos donde se mostrara el estado de los pedidos realizados,
+ya sea que esten pendientes, en proceso, cancelados o entregados.
+
+Lista de Productos:
+iPhone X id 1
+iPhone 12 id 2
+iPhone 13 id 3
+iPhone 14 id 4
+iPad id 5
+iPad Air id 6
+iPad Pro id 7
+iPad Mini id 8
+Apple Watch id 9
+Apple Watch SE id 10
+MacBook Air id 11
+MacBook Pro id 12
+Airpods Pro id 13
+Airpods Max id 14
+
+Categorias:
+Celulares id 1
+Tablets id 2
+Computadoras id 3
+Smart Watches id 4
+Audifonos id 5

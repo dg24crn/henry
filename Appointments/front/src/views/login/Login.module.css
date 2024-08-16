@@ -1,0 +1,16 @@
+.loginContainer {
+    text-align: center;
+    padding: 25px;
+}
+
+.loginContainer input {
+    margin-bottom: 10px;
+}
+
+.loginContainer label {
+    color: white;
+}
+
+.error {
+    color: yellow;
+}

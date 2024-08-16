@@ -1,0 +1,16 @@
+.registerContainer {
+    text-align: center;
+    padding: 25px;
+}
+
+.registerContainer input {
+    margin-bottom: 10px;
+}
+
+.registerContainer label {
+    color: white;
+}
+
+.error {
+    color: yellow;
+}

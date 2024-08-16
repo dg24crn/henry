@@ -1,0 +1,12 @@
+.createAppointmentContainer {
+    text-align: center;
+    border: 1px solid;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 5px;
+    padding-bottom: 15px;
+    width: 250px;
+    color: white;
+}

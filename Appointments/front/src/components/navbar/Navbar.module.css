@@ -1,0 +1,30 @@
+.navbarContainer {
+  border: 1px solid white;
+  height: 100px;
+
+  color: white;
+  font-size: 18px;
+  font-family: Monocraft;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbarContainerLink {
+  transition: 0.2s;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.navbarContainerLink:hover{
+  font-size: 20px;
+  color: yellow;
+  filter: drop-shadow(1px 1px 10px yellow);
+}
+
+.navbarContainer img {
+  height: 100px;
+  filter: drop-shadow(1px 1px 5px yellow);
+}

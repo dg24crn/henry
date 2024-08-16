@@ -1,0 +1,71 @@
+// Pagina para agendar turnos/visitas //
+
+Tematica:
+    Museo de Arte
+
+Descripcion:
+    Se trata de una pagina sobre un museo, mediante
+    la cual se pueden agendar visitas a el mismo.
+
+    Para poder agendar visitas el usuario debera de
+    estar registrado en la pagina, de lo contrario
+    tendra que registrarse y acceder con sus credenciales
+    para poder agendar visitas.
+
+    Usuarios Registrados:
+        Podran agendar y cancelar visitas, al igual que
+        editar sus perfiles para modificar sus credenciales.
+
+    Usuarios No Registrados:
+        Tendran que registrarse para poder agendar visitas,
+        en caso de no estar registrados podran crear una cuenta
+        ingresando sus credenciales.
+
+Contenido:
+    Pagina Home:
+        Mostrará informacion breve sobre el museo, al igual
+        que un par de imagenes ilustrativas y una barra de
+        navegacion con opciones para ingresar, registrarse
+        o ver las visitas agendadas.
+
+    Pagina Register:
+        Contendrá un formulario para que el usuario ingrese
+        sus credenciales y se registre en el sitio, una vez
+        registrado podra ingresar con sus credenciales y
+        tendra la posibilidad de agendar visitas.
+
+    Pagina Login:
+        Contendra un formulario para que el usuario, una vez
+        registrado, pueda iniciar sesion ingresando sus
+        credenciales, ademas, una vez iniciado sesion, podra
+        agendar visitas y modificar su perfil.
+
+Puntos Clave:
+    Si el usuario no ha iniciado sesion, no podra agendar
+    visitas o ver sus visitas agendadas.
+
+    Las visitas agendadas no podran ser modificadas, solamente
+    podran ser canceladas hasta 1 dia antes de la fecha
+    establecida.
+
+    *La capacidad es ilimitada, puede haber muchos turnos
+    para una misma fecha/hora.
+
+    *No se pueden agendar visitas los fines de semana.
+
+Datos y Estructura:
+
+id: number
+name: string
+email: string
+birthdate: string
+nDni: string
+
+username: string
+password: string
+
+aptStatus: boolean
+
+User - Appointments = Uno a muchos
+
+User - Credentials = Uno a uno
