@@ -1,71 +1,85 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/styles.css">
+  <head>
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
     <title>Proyecto M1 | Mi Pagina Web</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div>
-            <h1 id="my-name">Diego Carreon</h1>
-        </div>
-        <div>
-            <h2 id="my-web">Mi Pagina Web | Proyecto Modulo 01</h2>
-        </div>
+      <div>
+        <h1 id="my-name">Diego Carreon</h1>
+      </div>
+      <div>
+        <h2 id="my-web">My Web Page</h2>
+      </div>
     </header>
     <main>
-        <section>
-            <div id="who-container">
-                <div>
-                    <h3 id="who">¿Quien Soy?</h3>
-                    <p id="who-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae deleniti 
-                        consectetur ut optio facere nemo culpa excepturi dolores est, pariatur veniam, impedit facilis 
-                        vero quam doloribus perspiciatis, esse libero quidem. culpa excepturi dolores est, pariatur veniam, impedit facilis 
-                        vero quam doloribus perspiciatis, esse libero quidem.</p>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div id="food-container">
-                <div>
-                    <h3 id="food-text">¿Cuales son mis comidas favoritas?</h3>
-                </div>
-                <div class="comida">
-                    <img src="assets/images/Teriyaki.jpg" alt="Teriyaki">
-                    <p>Pollo Teriyaki</p>
-                </div>
-                <div class="comida">
-                    <img src="assets/images/Pizza.jpg" alt="Pizza">
-                    <p>Pizza</p>
-                </div>
-                <div class="comida">
-                    <img src="assets/images/Sushi.jpg" alt="Sushi">
-                    <p>Sushi</p>
-                </div>
-            </div>            
-        </section>
-        <section id="activities-box">
-            <form>
-                <div>
-                    <h1 id="actividades-title">Mis Actividades Favoritas</h1>
-                </div>
-                <div id="activity-name">
-                    <input type="text" id="activity-name-input" placeholder="Nombre de la Actividad">
-                </div>
-                <div id="activity-description">
-                    <input type="text" id="activity-description-input" placeholder="Descripcion de la Actividad">
-                </div>
-                <div id="activity-url">
-                    <input type="url" id="activity-url-input" placeholder="URL de la Imagen">
-                </div>
-                <div>
-                    <button id="add-activity-button">Agregar Actividad</button>
-                </div>
-            </form>
-        </section>
-        <div id="activities-container"></div>
+      <section>
+        <div id="who-container">
+          <div>
+            <h3 id="who">Who am I?</h3>
+            <p id="who-text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae
+              deleniti consectetur ut optio facere nemo culpa excepturi dolores
+              est, pariatur veniam, impedit facilis vero quam doloribus
+              perspiciatis, esse libero quidem. culpa excepturi dolores est,
+              pariatur veniam, impedit facilis vero quam doloribus perspiciatis,
+              esse libero quidem.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div id="food-container">
+          <div>
+            <h3 id="food-text">What are my favorite meals?</h3>
+          </div>
+          <div class="comida">
+            <img src="assets/images/Teriyaki.jpg" alt="Teriyaki" />
+            <p>Teriyaki Chicken</p>
+          </div>
+          <div class="comida">
+            <img src="assets/images/Pizza.jpg" alt="Pizza" />
+            <p>Pizza</p>
+          </div>
+          <div class="comida">
+            <img src="assets/images/Sushi.jpg" alt="Sushi" />
+            <p>Sushi</p>
+          </div>
+        </div>
+      </section>
+      <section id="activities-box">
+        <form>
+          <div>
+            <h1 id="actividades-title">Add An Activity:</h1>
+          </div>
+          <div id="activity-name">
+            <input
+              type="text"
+              id="activity-name-input"
+              placeholder="Activity Name"
+            />
+          </div>
+          <div id="activity-description">
+            <textarea
+              name=""
+              id="activity-description-input"
+              placeholder="Activity Description"
+            ></textarea>
+          </div>
+          <div id="activity-url">
+            <input type="url" id="activity-url-input" placeholder="Image URL" />
+          </div>
+          <div>
+            <button id="add-activity-button">Add Activity</button>
+          </div>
+        </form>
+        <div id="activities-container">
+          <!--* Activities Will Show Here -->
+        </div>
+      </section>
     </main>
     <script src="scripts/index.js"></script>
-</body>
+  </body>
 </html>
