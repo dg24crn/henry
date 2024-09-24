@@ -4,7 +4,7 @@ require("dotenv").config()
 
 const dbCon = async () => {
     try {
-        await mongoose.connect(`mongodb+srv://${process.env.MONGO_DB_USER}:${process.env.MONGO_DB_PASSWORD}@proyectom2.1ffdyx8.mongodb.net/movies`)
+        await mongoose.connect(`mongodb+srv://diego24carreon:PIiToBARqlZWxby9@movies.6cowz.mongodb.net/`)
         console.log("Database Connection Successful");
     } catch (error) {
         throw new Error("Database Connection Error")
@@ -12,3 +12,4 @@ const dbCon = async () => {
 }
 
 module.exports = dbCon
+
