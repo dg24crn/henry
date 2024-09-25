@@ -36,7 +36,7 @@ export const MyAppointments = () => {
   return (
     <div>
       <CreateAppointment />
-      <h1 className={styles.turnosTitle}>Turnos</h1>
+      <h1 className={styles.turnosTitle}>Appointments</h1>
       {appts.length ? (
         appts.map(({ time, date, id, status }) => (
           <Appointment
@@ -48,7 +48,7 @@ export const MyAppointments = () => {
           />
         ))
       ) : (
-        <div>No hay turnos disponibles</div>
+        <div>No appointments available.</div>
       )}
     </div>
   );

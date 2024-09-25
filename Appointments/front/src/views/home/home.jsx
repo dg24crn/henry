@@ -4,10 +4,10 @@ export const Home = () => {
   return (
     <div className={styles.homeContainer}>
       <div className={styles.museoTitleContainer}>
-        <h1 className={styles.museoTitle}>Museo de Arte Historico</h1>
+        <h1 className={styles.museoTitle}>Museum of Historical Art</h1>
       </div>
       <div>
-        <h1 className={styles.nuestrasObrasTitle}>Nuestras Obras:</h1>
+        <h1 className={styles.nuestrasObrasTitle}>Our Works</h1>
       </div>
       <div className={styles.artworkContainer}>
         <img src="../src/assets/img/aw1.jpg" alt="artwork1" />

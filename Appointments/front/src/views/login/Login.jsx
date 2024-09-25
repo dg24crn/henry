@@ -29,8 +29,8 @@ export const Login = () => {
     let errors = {};
 
     if (!formData.username)
-      errors.username = "El nombre de usuario es requerido";
-    if (!formData.password) errors.password = "La contraseña es requerida";
+      errors.username = "Username is Required";
+    if (!formData.password) errors.password = "Password is Required";
 
     return errors;
   };
@@ -48,12 +48,12 @@ export const Login = () => {
         );
         dispatch(addUser(response.data.user))
         console.log("Usuario autenticado:", response.data);
-        alert("Login exitoso");
+        alert("Logged In Succesfully");
         console.log("Respuesta del servidor:", response.data);
         navigate('/appointments')
 
       } catch (error) {
-        setMessage("Error al iniciar sesión");
+        setMessage("Something Went Wrong");
         console.error("Error al iniciar sesión:", error);
       }
     }
@@ -61,7 +61,7 @@ export const Login = () => {
 
   return (
     <form className={styles.loginContainer} onSubmit={handleSubmit}>
-      <h1>Iniciar Sesión</h1>
+      <h1>Login</h1>
       {message && (
         <p
           className={
@@ -72,7 +72,7 @@ export const Login = () => {
         </p>
       )}
       <div>
-        <label>Nombre de Usuario</label>
+        <label>Username</label>
         <br />
         <input
           type="text"
@@ -86,7 +86,7 @@ export const Login = () => {
         )}
       </div>
       <div>
-        <label>Contraseña</label>
+        <label>Password</label>
         <br />
         <input
           type="password"
@@ -99,7 +99,7 @@ export const Login = () => {
           <span className={styles.error}>{errors.password}</span>
         )}
       </div>
-      <button type="submit">Iniciar Sesión</button>
+      <button type="submit">Login</button>
     </form>
   );
 };

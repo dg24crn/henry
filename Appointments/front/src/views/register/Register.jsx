@@ -59,7 +59,7 @@ export const Register = () => {
 
   return (
     <form className={styles.registerContainer} onSubmit={handleSubmit}>
-      <h1>Registro de Usuario</h1>
+      <h1>Register</h1>
       {message && (
         <p
           className={
@@ -70,7 +70,7 @@ export const Register = () => {
         </p>
       )}
       <div>
-        <label>Nombre</label>
+        <label>Name</label>
         <br />
         <input
           type="text"
@@ -94,7 +94,7 @@ export const Register = () => {
         {errors.email && <span className={styles.error}>{errors.email}</span>}
       </div>
       <div>
-        <label>Fecha de Nacimiento</label>
+        <label>Birthdate</label>
         <br />
         <input
           type="text"
@@ -108,7 +108,7 @@ export const Register = () => {
         )}
       </div>
       <div>
-        <label>Numero de DNI</label>
+        <label>ID Number</label>
         <br />
         <input
           type="text"
@@ -120,7 +120,7 @@ export const Register = () => {
         {errors.nDni && <span className={styles.error}>{errors.nDni}</span>}
       </div>
       <div>
-        <label>Nombre de Usuario</label>
+        <label>Username</label>
         <br />
         <input
           type="text"
@@ -134,7 +134,7 @@ export const Register = () => {
         )}
       </div>
       <div>
-        <label>Contraseña</label>
+        <label>Password</label>
         <br />
         <input
           type="password"
@@ -147,7 +147,7 @@ export const Register = () => {
           <span className={styles.error}>{errors.password}</span>
         )}
       </div>
-      <button type="submit">Registrar</button>
+      <button type="submit">Register</button>
     </form>
   );
 };

@@ -21,18 +21,18 @@ export const Appointment = ({ id, date, time, status }) => {
 
   return (
     <div className={styles.appointmentContainer}>
-      <h2>Turno #{id}</h2>
+      <h2>Appointment #{id}</h2>
       <p>
-        Fecha: <span>{date}</span>
+        Date: <span>{date}</span>
       </p>
       <p>
-        Hora: <span>{time}</span>
+        Time: <span>{time}</span>
       </p>
       <p>
-        Estado: <span>{status ? "Activo" : "Cancelado"}</span>
+        Status: <span>{status ? "Active" : "Cancelled"}</span>
       </p>
       <button disabled={status === false} onClick={cancelAppointment}>
-        Cancelar Turno
+        Cancel Appointment
       </button>
     </div>
   );

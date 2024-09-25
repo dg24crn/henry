@@ -25,15 +25,15 @@ export const CreateAppointment = () => {
   const validate = () => {
     let errors = {};
 
-    if (!formData.date) errors.date = "La fecha es requerida";
-    if (!formData.time) errors.time = "La hora es requerida";
+    if (!formData.date) errors.date = "Date Required";
+    if (!formData.time) errors.time = "Time Required";
 
     if (formData.date) {
       const selectedDate = new Date(formData.date);
       const dayOfWeek = selectedDate.getDay();
 
       if (dayOfWeek === 0 || dayOfWeek === 6) {
-        errors.date = "No se pueden agendar visitas los fines de semana";
+        errors.date = "Cannot schedule appointments on weekend";
       }
     }
 
@@ -55,11 +55,11 @@ export const CreateAppointment = () => {
             userId: userData.id,
           }
         );
-        alert("Turno agendado exitosamente");
+        alert("Appointment has been scheduled");
         navigate("/home");
         console.log("Respuesta del servidor:", response.data);
       } catch (error) {
-        setMessage("Error al agendar turno");
+        setMessage("Something went wrong");
         console.error("Error al agendar turno:", error);
       }
     }
@@ -67,10 +67,10 @@ export const CreateAppointment = () => {
 
   return (
     <form className={styles.createAppointmentContainer} onSubmit={handleSubmit}>
-      <h1>Agendar Visita</h1>
+      <h1>Schedule Appointment</h1>
       {message && <p className={styles.success}>{message}</p>}
       <div>
-        <label>Fecha</label>
+        <label>Date</label>
         <br />
         <input
           type="date"
@@ -83,7 +83,7 @@ export const CreateAppointment = () => {
       </div>
       <br />
       <div>
-        <label>Hora</label>
+        <label>Time</label>
         <br />
         <input
           type="time"
@@ -95,7 +95,7 @@ export const CreateAppointment = () => {
         {errors.time && <span className={styles.error}>{errors.time}</span>}
       </div>
       <br />
-      <button type="submit">Agendar</button>
+      <button type="submit">Schedule</button>
     </form>
   );
 };

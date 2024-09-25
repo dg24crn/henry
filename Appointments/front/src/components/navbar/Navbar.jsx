@@ -9,21 +9,21 @@ export const Navbar = () => {
     <nav className={styles.navbarContainer}>
       <img src="../src/assets/img/Logo.png" alt="Logo" />
       <Link className={styles.navbarContainerLink} to="/home">
-        Inicio
+        Home
       </Link>
       <Link className={styles.navbarContainerLink} to="/about">
-        Acerca De
+        About
       </Link>
       {userData.name && (
         <Link className={styles.navbarContainerLink} to="/appointments">
-          Mis Turnos
+          My Appointments
         </Link>
       )}
       <Link className={styles.navbarContainerLink} to="/login">
-        Iniciar Sesion
+        Login
       </Link>
       <Link className={styles.navbarContainerLink} to="/register">
-        Registrarse
+        Register
       </Link>
     </nav>
   );
