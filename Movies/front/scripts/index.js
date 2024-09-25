@@ -26,7 +26,7 @@ moviesForm.addEventListener('submit', async (event) => {
   const poster = document.getElementById('posterInput').value.trim();
 
   if (!title || !year || !director || !duration || !genre || !rate || !poster) {
-    alert('RELLENA TODOS LOS CAMPOS');
+    alert('FILL IN ALL THE FIELDS');
     return;
   }
 

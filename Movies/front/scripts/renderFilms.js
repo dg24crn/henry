@@ -12,10 +12,10 @@ const renderFilms = (movie) => {
     containerMovie.innerHTML = `
     <h3 id="movieTitleText">${movie.title}</h3>
     <hr>
-    <p><strong>Año:</strong><br>${movie.year}</p>
+    <p><strong>Year:</strong><br>${movie.year}</p>
     <p><strong>Director:</strong><br>${movie.director}</p>
-    <p><strong>Duracion:</strong><br>${movie.duration}</p>
-    <p><strong>Genero:</strong><br>${movie.genre}</p>
+    <p><strong>Duration:</strong><br>${movie.duration}</p>
+    <p><strong>Genre:</strong><br>${movie.genre}</p>
     <p><strong>Rating:</strong><br>${movie.rate}</p>
     `
 

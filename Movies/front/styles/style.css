@@ -82,9 +82,19 @@ body {
     width: 250px;
 }
 
+.movie {
+    border-radius: 15px;
+    padding: 5px;
+    margin: 15px;
+}
+
+.movie h3 {
+    text-align: center;
+}
+
 #movieTitleText {
     font-family: bebas neue;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 #historia-container {
