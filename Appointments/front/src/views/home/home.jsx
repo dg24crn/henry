@@ -10,18 +10,25 @@ export const Home = () => {
         <div className={styles.whoContainer}>
           <h1>Who we are?</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-            labore laboriosam pariatur aliquam sit? Labore quod explicabo rem
-            quaerat fugit mollitia adipisci sit aliquid ducimus dolore, aperiam
-            saepe incidunt placeat?
+            Welcome to our museum, where history, art, and culture converge. Our
+            mission is to preserve the treasures of the past while inspiring
+            curiosity and creativity in the present. Through carefully curated
+            exhibits and engaging experiences, we aim to transport our visitors
+            through time, exploring the wonders of ancient civilizations,
+            groundbreaking art movements, and the stories that shaped our world.
           </p>
         </div>
         <div className={styles.whatContainer}>
           <h1>What we do?</h1>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dicta
-          iure voluptates neque, unde optio cumque. Iste incidunt, nam
-          necessitatibus nihil perspiciatis reiciendis! Perferendis assumenda
-          porro fugiat praesentium amet iste?
+          <p>
+            At our museum, we bring history to life and foster a deeper
+            connection with the world’s cultural heritage. Through immersive
+            exhibitions, interactive displays, and educational programs, we
+            offer visitors a chance to explore art, history, and science in a
+            meaningful and engaging way. Our goal is to inspire curiosity and
+            spark a lifelong love for learning by presenting the past and
+            present in innovative formats.
+          </p>
         </div>
       </div>
       <div id="work" className={styles.workContainer}>

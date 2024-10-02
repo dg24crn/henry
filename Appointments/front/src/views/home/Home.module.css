@@ -4,8 +4,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 40px;
-  font-family: Monocraft;
+  font-size: 3rem;
+  font-family: 'Monocraft', sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .landingContainer::before {
@@ -23,29 +24,60 @@
 }
 
 .infoContainer {
-  border: 1px solid;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   height: 100vh;
+  padding: 0;
+  margin: 0;
 }
 
-.whoContainer {
-    border: 1px solid;
-    height: 40vh;
-    width: 60vh;
-    text-align: center;
-    margin: 25px;
-    margin-left: 30vh;
+.whoContainer, .whatContainer {
+  flex: 1;
+  max-width: 600px;
+  text-align: center;
+  margin: 0 1rem;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.whatContainer {
-    border: 1px solid;
-    height: 40vh;
-    width: 60vh;
-    text-align: center;
-    margin: 25px;
-    margin-left: 90vh;
+.whoContainer h1, .whatContainer h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.whoContainer p, .whatContainer p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.whoContainer:hover, .whatContainer:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
 }
 
 .workContainer {
-    border: 1px solid;
-    height: 100vh;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .infoContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .whoContainer, .whatContainer {
+    max-width: 90%;
+    margin: 1rem 0;
+  }
 }
