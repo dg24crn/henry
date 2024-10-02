@@ -27,7 +27,7 @@ export const MyAppointments = () => {
     };
 
     if (!userData.name) {
-      navigate("/home");
+      navigate("/");
     } else {
       fetchData();
     }

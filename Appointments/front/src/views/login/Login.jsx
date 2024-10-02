@@ -1,7 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import styles from "./Login.module.css";
-import { useNavigate} from 'react-router-dom'
+import { Link, useNavigate} from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 import { addUser } from "../../redux-toolkit/reducer";
 
@@ -47,14 +47,14 @@ export const Login = () => {
           formData
         );
         dispatch(addUser(response.data.user))
-        console.log("Usuario autenticado:", response.data);
+        console.log("Auth succesful:", response.data);
         alert("Logged In Succesfully");
-        console.log("Respuesta del servidor:", response.data);
+        console.log("Server Response:", response.data);
         navigate('/appointments')
 
       } catch (error) {
         setMessage("Something Went Wrong");
-        console.error("Error al iniciar sesión:", error);
+        console.error("Error trying to loging in:", error);
       }
     }
   };
@@ -99,6 +99,7 @@ export const Login = () => {
           <span className={styles.error}>{errors.password}</span>
         )}
       </div>
+      <Link className={styles.toRegister} to='/register'>Dont have an account?</Link>
       <button type="submit">Login</button>
     </form>
   );

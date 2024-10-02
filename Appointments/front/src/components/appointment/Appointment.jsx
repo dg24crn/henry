@@ -13,7 +13,7 @@ export const Appointment = ({ id, date, time, status }) => {
       await axios.put(`http://localhost:3000/appointment/cancel/${id}`);
       dispatch(removeAppointment(id));
       alert("Turno Cancelado");
-      navigate("/home");
+      navigate("/");
     } catch (error) {
       console.error("Ocurrió un error al cancelar el turno", error);
     }

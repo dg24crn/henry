@@ -56,8 +56,8 @@ export const CreateAppointment = () => {
           }
         );
         alert("Appointment has been scheduled");
-        navigate("/home");
-        console.log("Respuesta del servidor:", response.data);
+        navigate("/");
+        console.log("Server Response:", response.data);
       } catch (error) {
         setMessage("Something went wrong");
         console.error("Error al agendar turno:", error);

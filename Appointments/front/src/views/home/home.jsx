@@ -2,48 +2,30 @@ import styles from "./Home.module.css";
 
 export const Home = () => {
   return (
-    <div className={styles.homeContainer}>
-      <div className={styles.museoTitleContainer}>
-        <h1 className={styles.museoTitle}>Museum of Historical Art</h1>
+    <div id="home" className={styles.homeContainer}>
+      <div className={styles.landingContainer}>
+        <h1>Welcome to our world</h1>
       </div>
-      <div>
-        <h1 className={styles.nuestrasObrasTitle}>Our Works</h1>
+      <div id="info" className={styles.infoContainer}>
+        <div className={styles.whoContainer}>
+          <h1>Who we are?</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+            labore laboriosam pariatur aliquam sit? Labore quod explicabo rem
+            quaerat fugit mollitia adipisci sit aliquid ducimus dolore, aperiam
+            saepe incidunt placeat?
+          </p>
+        </div>
+        <div className={styles.whatContainer}>
+          <h1>What we do?</h1>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dicta
+          iure voluptates neque, unde optio cumque. Iste incidunt, nam
+          necessitatibus nihil perspiciatis reiciendis! Perferendis assumenda
+          porro fugiat praesentium amet iste?
+        </div>
       </div>
-      <div className={styles.artworkContainer}>
-        <img src="../src/assets/img/aw1.jpg" alt="artwork1" />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
-          quisquam dolor hic aspernatur explicabo nobis earum modi aliquid
-          numquam accusamus. Reprehenderit provident sequi ex dolores architecto
-          impedit quis inventore ad?
-        </p>
-      </div>
-      <div className={styles.artworkContainer}>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente
-          earum eligendi culpa sint perspiciatis, ducimus libero nostrum
-          accusantium iusto voluptates omnis esse saepe id ab natus? Natus nihil
-          soluta consectetur!
-        </p>
-        <img src="../src/assets/img/aw2.jpg" alt="artwork2" />
-      </div>
-      <div className={styles.artworkContainer}>
-        <img src="../src/assets/img/aw3.jpg" alt="artwork3" />
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum,
-          maxime. Voluptates vitae vel labore, explicabo sunt pariatur atque, ut
-          possimus modi dolore quam laboriosam quasi corrupti quod molestias
-          minima. Laboriosam.
-        </p>
-      </div>
-      <div className={styles.artworkContainer}>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-          ratione cumque mollitia facilis nisi unde reiciendis eaque animi.
-          Soluta ea ab rerum consequuntur, earum ullam incidunt accusantium
-          error. Et, adipisci!
-        </p>
-        <img src="../src/assets/img/aw4.jpg" alt="artwork4" />
+      <div id="work" className={styles.workContainer}>
+        <h1>Our Work</h1>
       </div>
     </div>
   );

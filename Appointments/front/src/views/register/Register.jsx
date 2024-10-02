@@ -1,8 +1,11 @@
 import { useState } from "react";
 import axios from "axios";
 import styles from "./Register.module.css";
+import { useNavigate } from "react-router-dom";
 
 export const Register = () => {
+  const navigate = useNavigate()
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -26,14 +29,14 @@ export const Register = () => {
   const validate = () => {
     let errors = {};
 
-    if (!formData.name) errors.name = "El nombre es requerido";
-    if (!formData.email) errors.email = "El email es requerido";
+    if (!formData.name) errors.name = "Name is required";
+    if (!formData.email) errors.email = "Email is required";
     if (!formData.birthdate)
-      errors.birthdate = "La fecha de nacimiento es requerida";
-    if (!formData.nDni) errors.nDni = "El número de DNI es requerido";
+      errors.birthdate = "Birthdate is required";
+    if (!formData.nDni) errors.nDni = "DNI number is required";
     if (!formData.username)
-      errors.username = "El nombre de usuario es requerido";
-    if (!formData.password) errors.password = "La contraseña es requerida";
+      errors.username = "Username is required";
+    if (!formData.password) errors.password = "Password is required";
 
     return errors;
   };
@@ -49,10 +52,11 @@ export const Register = () => {
           formData
         );
         response;
-        setMessage("Registro exitoso");
+        alert("Registered Succesfully")
+        navigate('/login')
       } catch (error) {
-        setMessage("Error al registrar el usuario");
-        console.error("Error al registrar el usuario:", error);
+        setMessage("Error trying to register");
+        console.error("Error trying to register:", error);
       }
     }
   };
@@ -63,7 +67,7 @@ export const Register = () => {
       {message && (
         <p
           className={
-            message.includes("exitoso") ? styles.success : styles.error
+            message.includes("Succesful") ? styles.success : styles.error
           }
         >
           {message}

@@ -1,14 +1,11 @@
 .navbarContainer {
-  border: 1px solid white;
   height: 100px;
-
   color: white;
   font-size: 18px;
   font-family: Monocraft;
-
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  justify-content: end;
 }
 
 .navbarContainerLink {
@@ -16,9 +13,10 @@
   cursor: pointer;
   text-decoration: none;
   color: white;
+  margin: 15px;
 }
 
-.navbarContainerLink:hover{
+.navbarContainerLink:hover {
   font-size: 20px;
   color: yellow;
   filter: drop-shadow(1px 1px 10px yellow);
