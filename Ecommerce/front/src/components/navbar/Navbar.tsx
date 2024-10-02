@@ -22,7 +22,7 @@ export default function Navbar() {
 
   return (
     <div>
-      <div className="bg-black h-12 py-12 flex justify-around items-center">
+      <div className="h-12 py-12 flex justify-around items-center">
         <Link href="/" className="flex items-center">
           <img className="w-24" src="/assets/img/Logo.png" alt="Logo" />
           <p>Home</p>
