@@ -33,6 +33,9 @@ export const Home = () => {
       </div>
       <div id="work" className={styles.workContainer}>
         <h1>Our Work</h1>
+        <div>
+          <p>Hi there</p>
+        </div>
       </div>
     </div>
   );
