@@ -62,6 +62,7 @@
 
 .workContainer {
   height: 100vh;
+  border: 1px solid;
 }
 
 .workContainer h1 {
@@ -69,6 +70,19 @@
   text-align: center;
 }
 
+.artworkContainer {
+  margin: 10px;
+  height: 100vh;
+}
+
+.artwork {
+  border: 1px solid;
+}
+
+.artwork img {
+  height: 5vh;
+  width: 5vh;
+}
 
 @media (max-width: 768px) {
   .infoContainer {

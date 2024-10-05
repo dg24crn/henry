@@ -32,9 +32,26 @@ export const Home = () => {
         </div>
       </div>
       <div id="work" className={styles.workContainer}>
-        <h1>Our Work</h1>
         <div>
-          <p>Hi there</p>
+          <h1>Our Work</h1>
+        </div>
+        <div className={styles.artworkContainer}>
+          <div className={styles.artwork}>
+            <img src="../src/assets/img/aw1.jpg" alt="aw1" />
+            <p>Artwork 1 Title</p>
+          </div>
+          <div className={styles.artwork}>
+            <img src="../src/assets/img/aw2.jpg" alt="aw1" />
+            <p>Artwork 2 Title</p>
+          </div>
+          <div className={styles.artwork}>
+            <img src="../src/assets/img/aw3.jpg" alt="aw1" />
+            <p>Artwork 3 Title</p>
+          </div>
+          <div className={styles.artwork}>
+            <img src="../src/assets/img/aw4.jpg" alt="aw1" />
+            <p>Artwork 4 Title</p>
+          </div>
         </div>
       </div>
     </div>
