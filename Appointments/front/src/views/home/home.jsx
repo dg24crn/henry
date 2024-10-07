@@ -22,7 +22,7 @@ export const Home = () => {
           <h1>What we do?</h1>
           <p>
             At our museum, we bring history to life and foster a deeper
-            connection with the world’s cultural heritage. Through immersive
+            connection with the worlds cultural heritage. Through immersive
             exhibitions, interactive displays, and educational programs, we
             offer visitors a chance to explore art, history, and science in a
             meaningful and engaging way. Our goal is to inspire curiosity and
@@ -38,19 +38,19 @@ export const Home = () => {
         <div className={styles.artworkContainer}>
           <div className={styles.artwork}>
             <img src="../src/assets/img/aw1.jpg" alt="aw1" />
-            <p>Artwork 1 Title</p>
+            <h2>Taco Hat</h2>
           </div>
           <div className={styles.artwork}>
             <img src="../src/assets/img/aw2.jpg" alt="aw1" />
-            <p>Artwork 2 Title</p>
+            <h2>Waky Waky</h2>
           </div>
           <div className={styles.artwork}>
             <img src="../src/assets/img/aw3.jpg" alt="aw1" />
-            <p>Artwork 3 Title</p>
+            <h2>Sleepy Squirrel</h2>
           </div>
           <div className={styles.artwork}>
             <img src="../src/assets/img/aw4.jpg" alt="aw1" />
-            <p>Artwork 4 Title</p>
+            <h2>DJ Hamster</h2>
           </div>
         </div>
       </div>

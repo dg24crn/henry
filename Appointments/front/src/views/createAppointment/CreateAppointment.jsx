@@ -67,7 +67,7 @@ export const CreateAppointment = () => {
 
   return (
     <form className={styles.createAppointmentContainer} onSubmit={handleSubmit}>
-      <h1>Schedule Appointment</h1>
+      <h1 className={styles.schApt}>Schedule Appointment:</h1>
       {message && <p className={styles.success}>{message}</p>}
       <div>
         <label>Date</label>

@@ -25,4 +25,5 @@
 .navbarContainer img {
   height: 100px;
   filter: drop-shadow(1px 1px 5px yellow);
+  margin-right: auto;
 }

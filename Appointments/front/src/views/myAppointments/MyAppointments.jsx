@@ -36,19 +36,21 @@ export const MyAppointments = () => {
   return (
     <div>
       <CreateAppointment />
-      <h1 className={styles.turnosTitle}>Appointments</h1>
+      <h1 className={styles.turnosTitle}>Appointments:</h1>
       {appts.length ? (
-        appts.map(({ time, date, id, status }) => (
-          <Appointment
-            key={id}
-            time={time}
-            date={date}
-            id={id}
-            status={status}
-          />
-        ))
+        <div className={styles.appointmentsGrid}>
+          {appts.map(({ time, date, id, status }) => (
+            <Appointment
+              key={id}
+              time={time}
+              date={date}
+              id={id}
+              status={status}
+            />
+          ))}
+        </div>
       ) : (
-        <div>No appointments available.</div>
+        <div className={styles.noApt}>No appointments available.</div>
       )}
     </div>
   );

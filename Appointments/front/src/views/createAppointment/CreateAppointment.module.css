@@ -7,6 +7,10 @@
     margin-bottom: 15px;
     padding: 5px;
     padding-bottom: 15px;
-    width: 250px;
+    width: 400px;
     color: white;
+}
+
+.schApt {
+    font-family: Monocraft;
 }

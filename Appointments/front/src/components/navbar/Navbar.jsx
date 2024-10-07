@@ -7,6 +7,7 @@ export const Navbar = () => {
 
   return (
     <nav className={styles.navbarContainer}>
+      <img src="../src/assets/img/Logo.png" alt="Logo" />
       <Link className={styles.navbarContainerLink} to='/'>Home</Link>
       {userData.name ? (
         <Link className={styles.navbarContainerLink} to="/appointments">

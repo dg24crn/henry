@@ -1,6 +1,21 @@
 .turnosTitle {
     font-family: Monocraft;
+    margin-top: 10vh;
     font-size: 25px;
     color: white;
     text-align: center;
+}
+
+.noApt {
+    text-align: center;
+    margin-top: 5vh;
+    font-size: 25px;
+}
+
+.appointmentsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    margin: 20px;
 }

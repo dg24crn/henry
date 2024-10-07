@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   font-size: 3rem;
-  font-family: 'Monocraft', sans-serif;
+  font-family: "Monocraft", sans-serif;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
@@ -32,7 +32,8 @@
   margin: 0;
 }
 
-.whoContainer, .whatContainer {
+.whoContainer,
+.whatContainer {
   flex: 1;
   max-width: 600px;
   text-align: center;
@@ -44,25 +45,27 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.whoContainer h1, .whatContainer h1 {
+.whoContainer h1,
+.whatContainer h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
 }
 
-.whoContainer p, .whatContainer p {
+.whoContainer p,
+.whatContainer p {
   font-size: 1.2rem;
   line-height: 1.5;
 }
 
-.whoContainer:hover, .whatContainer:hover {
+.whoContainer:hover,
+.whatContainer:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
   transition: all 0.3s ease;
 }
 
 .workContainer {
-  height: 100vh;
-  border: 1px solid;
+  height: auto;
 }
 
 .workContainer h1 {
@@ -72,16 +75,28 @@
 
 .artworkContainer {
   margin: 10px;
-  height: 100vh;
+  height: auto;
 }
 
 .artwork {
+  margin: 25px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
   border: 1px solid;
+  border-radius: 20px;
+  height: auto;
+  width: 50vh;
 }
 
 .artwork img {
-  height: 5vh;
-  width: 5vh;
+  height: 25vh;
+  width: 25vh;
+  border-radius: 25px;
+}
+
+.artwork h2 {
+  margin-left: 50px;
 }
 
 @media (max-width: 768px) {
@@ -90,7 +105,8 @@
     align-items: center;
   }
 
-  .whoContainer, .whatContainer {
+  .whoContainer,
+  .whatContainer {
     max-width: 90%;
     margin: 1rem 0;
   }
