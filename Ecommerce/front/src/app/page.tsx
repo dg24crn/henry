@@ -6,8 +6,8 @@ import MainCarousel from "@/components/mainCarousel/MainCarousel";
 export default function Home() {
   return (
     <div className="h-auto">
-      <MainCarousel />
       <Categories />
+      <MainCarousel />
       <div className="border-4 h-fit m-6 p-12">
         <AllProducts />
       </div>

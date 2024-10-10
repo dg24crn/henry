@@ -25,7 +25,6 @@ export default function Navbar() {
       <div className="h-12 py-12 flex justify-around items-center">
         <Link href="/" className="flex items-center">
           <img className="w-24" src="/assets/img/Logo.png" alt="Logo" />
-          <p>Home</p>
         </Link>
         {userSession && userSession.token ? (
           <div>
